@@ -1,0 +1,55 @@
+{
+  "authors": [
+    {
+      "id": 1,
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "johndoe@email.com",
+      "birthDay": "1980-08-14T06:10:33.518Z"
+    },
+    {
+      "id": 2,
+      "firstName": "Olive",
+      "lastName": "Yew",
+      "email": "oliveyew@email.com",
+      "birthDay": "1979-08-14T06:10:33.518Z"
+    },
+    {
+      "id": 3,
+      "firstName": "Maureen",
+      "lastName": "Mused",
+      "email": "maureenmused@email.com",
+      "birthDay": "1988-08-14T06:10:33.518Z"
+    },
+    {
+      "id": 4,
+      "firstName": "Hugo",
+      "last_name": "Musk",
+      "email": "hugomusk@email.com",
+      "birthDay": "1998-08-14T06:10:33.518Z"
+    },
+    {
+      "id": 5,
+      "firstName": "Peter",
+      "lastName": "Gate",
+      "email": "petergate@email.com",
+      "birthDay": "1991-08-14T06:10:33.518Z"
+    }
+  ],
+  "publications": [
+    {
+      "id": 1,
+      "authorId": 1,
+      "title": "The best ever publication",
+      "body": "This is the best book",
+      "createdAt": "2007-08-14T06:10:33.518Z"
+    },
+    {
+      "id": 2,
+      "authorId": 2,
+      "title": "OpenAI’s new language generator GPT-3 is shockingly good",
+      "body": "The AI is the largest language model ever created and can generate amazing human-like text on demand but won't bring us closer to true intelligence.",
+      "createdAt": "2020-08-14T06:10:33.518Z"
+    }
+  ]
+}
