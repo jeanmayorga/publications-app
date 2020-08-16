@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
-import { Home, Publication, Authors } from "../pages";
+import { Home, Publication, Publications, Authors } from "../pages";
 
 import { Layout } from "../components";
 
@@ -10,6 +10,7 @@ export function Routes() {
     <Layout>
       <Switch>
         <Route exact path="/authors" component={() => <Authors />} />
+        <Route exact path="/publications" component={() => <Publications />} />
         <Route
           exact
           path="/publication/:id"

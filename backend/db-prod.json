@@ -50,6 +50,13 @@
       "title": "OpenAI’s new language generator GPT-3 is shockingly good",
       "body": "The AI is the largest language model ever created and can generate amazing human-like text on demand but won't bring us closer to true intelligence.",
       "createdAt": "2020-08-14T06:10:33.518Z"
+    },
+    {
+      "id": 3,
+      "authorId": 2,
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, nisi sit eum, accusantium nulla aperiam tenetur officia ab sapiente neque quam aut similique, commodi iusto dolorem vitae culpa molestias sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, nisi sit eum, accusantium nulla aperiam tenetur officia ab sapiente neque quam aut similique, commodi iusto dolorem vitae culpa molestias sunt.",
+      "createdAt": "2020-08-14T06:10:33.518Z"
     }
   ]
 }
