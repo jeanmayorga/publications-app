@@ -1,7 +1,7 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 
-import { Home } from "../pages";
+import { Home, Publication, Authors } from "../pages";
 
 import { Layout } from "../components";
 
@@ -9,7 +9,13 @@ export function Routes() {
   return (
     <Layout>
       <Switch>
-        <Route path="/" component={() => <Home />} />
+        <Route exact path="/authors" component={() => <Authors />} />
+        <Route
+          exact
+          path="/publication/:id"
+          component={() => <Publication />}
+        />
+        <Route component={() => <Home />} />
       </Switch>
     </Layout>
   );

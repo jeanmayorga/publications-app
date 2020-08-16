@@ -1,9 +1,8 @@
 import React from "react";
+import { Row, Col } from "antd";
 
 import { SideBar } from "..";
 import { LayoutStyled } from "./styles";
-import { Header } from "../Header";
-import { Row, Col } from "antd";
 
 interface Props {
   children: React.ReactNode;
@@ -12,7 +11,6 @@ interface Props {
 export function Layout({ children }: Props) {
   return (
     <LayoutStyled>
-      <Header />
       <Row>
         <Col xs={24} lg={6}>
           <SideBar />

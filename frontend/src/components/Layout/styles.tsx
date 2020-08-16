@@ -1,11 +1,11 @@
-import styled from "styled-components";
+import styled from "../../utils/styled";
 
-export const LayoutStyled = styled.main`
-  background: "#fff";
-  margin: 0 auto;
+export const LayoutStyled = styled.section`
+  background: ${({ theme }) => theme.colors.white};
+  margin: auto;
   width: 100%;
-  @media (min-width: 992px) {
-    width: 648px;
-    margin: auto;
+  @media (min-width: 1024px) {
+    width: 900px;
+    border-radius: 15px;
   }
 `;
