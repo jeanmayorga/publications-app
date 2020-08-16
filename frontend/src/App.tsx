@@ -13,6 +13,11 @@ const makeGlobalStyles = (theme: Theme) => css`
   body {
     background: ${theme.colors.gray};
   }
+  @media (min-width: 992px) {
+    body {
+      padding-top: 2em;
+    }
+  }
 `;
 
 const GlobalStyles = withTheme(({ theme }) => (

@@ -11,11 +11,11 @@ interface Props {
 export function Layout({ children }: Props) {
   return (
     <LayoutStyled>
-      <Row>
-        <Col xs={24} lg={6}>
+      <Row gutter={15}>
+        <Col xs={24} lg={7}>
           <SideBar />
         </Col>
-        <Col xs={24} lg={18}>
+        <Col xs={24} lg={17}>
           {children}
         </Col>
       </Row>
