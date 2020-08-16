@@ -9,3 +9,7 @@ export const LayoutStyled = styled.section`
     border-radius: 15px;
   }
 `;
+
+export const ChildrenStyled = styled.div`
+  padding: 0 1em;
+`;

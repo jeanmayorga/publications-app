@@ -17,7 +17,7 @@ export const theme: Theme = {
     gray: "#eeeeee",
     white: "#ffffff",
     dark: "#110a18",
-    blue: "##1890ff",
+    blue: "#1890ff",
   },
   titleSizes: {
     large: "24px",

@@ -1,10 +1,13 @@
 import React from "react";
-import { BrowserRouter } from "react-router-dom";
-import { withTheme, ThemeProvider } from "emotion-theming";
-import { css, Global } from "@emotion/core";
 
+import { Provider } from "react-redux";
+import { store } from "./store";
+
+import { BrowserRouter } from "react-router-dom";
 import { Routes } from "./routes";
 
+import { withTheme, ThemeProvider } from "emotion-theming";
+import { css, Global } from "@emotion/core";
 import { theme, Theme } from "./utils";
 
 import "antd/dist/antd.css";
@@ -26,11 +29,13 @@ const GlobalStyles = withTheme(({ theme }) => (
 
 export function App() {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyles />
-      <BrowserRouter>
-        <Routes />
-      </BrowserRouter>
-    </ThemeProvider>
+    <Provider store={store}>
+      <ThemeProvider theme={theme}>
+        <GlobalStyles />
+        <BrowserRouter>
+          <Routes />
+        </BrowserRouter>
+      </ThemeProvider>
+    </Provider>
   );
 }

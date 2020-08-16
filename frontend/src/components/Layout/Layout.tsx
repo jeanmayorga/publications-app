@@ -2,7 +2,7 @@ import React from "react";
 import { Row, Col } from "antd";
 
 import { SideBar } from "..";
-import { LayoutStyled } from "./styles";
+import { LayoutStyled, ChildrenStyled } from "./styles";
 
 interface Props {
   children: React.ReactNode;
@@ -16,7 +16,7 @@ export function Layout({ children }: Props) {
           <SideBar />
         </Col>
         <Col xs={24} lg={17}>
-          {children}
+          <ChildrenStyled>{children}</ChildrenStyled>
         </Col>
       </Row>
     </LayoutStyled>

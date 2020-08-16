@@ -18,7 +18,9 @@ export function ListOfPublications({ authorId }: Props) {
 
   useEffect(() => {
     const getPublications = async (authorId: number | undefined) => {
-      let response = await api.get(`/publications`);
+      let response = await api.get(
+        `/publications?_expand=author&_sort=createdAt&_order=asc`
+      );
 
       if (authorId) {
         response = await api.get(`authors/${authorId}/publications`);
@@ -39,7 +41,7 @@ export function ListOfPublications({ authorId }: Props) {
   if (isLoading) {
     return (
       <ListOfPublicationsStyled>
-        {[1, 2, 3, 4, 5].map((item) => (
+        {[1, 2].map((item) => (
           <PubllicationItemSkeleton key={item} />
         ))}
       </ListOfPublicationsStyled>
