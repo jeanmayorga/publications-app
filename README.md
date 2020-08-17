@@ -1,6 +1,6 @@
 # Publications App
 
-This is an applcation for **Frontend Position**
+This is an application for **Frontend Position**
 
 ## Directory layout
 
