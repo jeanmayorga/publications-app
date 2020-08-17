@@ -1,12 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-import {
-  PageTitle,
-  Title,
-  Paragraph,
-  DateFormatted,
-  ListOfPublications,
-} from "../components";
+import { PageTitle, Title, Paragraph, DateFormatted } from "../components";
 // import { AuthorItem } from "../components/AuthorItem/AuthorItem";
 import { Author } from "../interfaces";
 import { api } from "../api";
@@ -52,9 +46,7 @@ export function AuthorPage() {
             active
           />
         </div>
-        <Paragraph>
-          <Skeleton title={false} paragraph={{ rows: 2 }} active />
-        </Paragraph>
+        <Skeleton title={false} paragraph={{ rows: 2 }} active />
       </div>
     );
   }
@@ -84,7 +76,7 @@ export function AuthorPage() {
         <DateFormatted date={author.birthDay} />
       </div>
       <Paragraph>{author.email}</Paragraph>
-      <ListOfPublications authorId={author.id} />
+      {/* <ListOfPublications authorId={author.id} /> */}
     </div>
   );
 }

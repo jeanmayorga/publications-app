@@ -10,9 +10,14 @@ const StyledPageHeader = styled(PageHeader)`
   display: flex;
   align-items: center;
   border-bottom: 1px solid ${({ theme }) => theme.colors.gray};
-  margin-bottom: 1em;
-  .ant-page-header-heading-title {
-    font-weight: 400;
+  @media (min-width: 992px) {
+    margin-bottom: 1em;
+  }
+  .ant-page-header-heading {
+    width: 100%;
+    .ant-page-header-heading-title {
+      font-weight: 400;
+    }
   }
 `;
 

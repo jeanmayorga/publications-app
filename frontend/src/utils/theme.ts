@@ -1,6 +1,7 @@
 export interface Theme {
   colors: {
     gray: string;
+    gray2: string;
     white: string;
     dark: string;
     blue: string;
@@ -15,6 +16,7 @@ export interface Theme {
 export const theme: Theme = {
   colors: {
     gray: "#eeeeee",
+    gray2: "#ddd",
     white: "#ffffff",
     dark: "#110a18",
     blue: "#1890ff",

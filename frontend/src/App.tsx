@@ -3,7 +3,8 @@ import React from "react";
 import { Provider } from "react-redux";
 import { store } from "./store";
 
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Route } from "react-router-dom";
+import { QueryParamProvider } from "use-query-params";
 import { Routes } from "./routes";
 
 import { withTheme, ThemeProvider } from "emotion-theming";
@@ -33,7 +34,9 @@ export function App() {
       <ThemeProvider theme={theme}>
         <GlobalStyles />
         <BrowserRouter>
-          <Routes />
+          <QueryParamProvider ReactRouterRoute={Route}>
+            <Routes />
+          </QueryParamProvider>
         </BrowserRouter>
       </ThemeProvider>
     </Provider>

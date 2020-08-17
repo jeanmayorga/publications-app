@@ -9,5 +9,7 @@ interface Props {
 
 export function DateFormatted({ date }: Props) {
   const transformed = new Date(date);
-  return <DateStyled>{format(transformed, "EEEE-M-yyyy")}</DateStyled>;
+  return (
+    <DateStyled>{format(transformed, "EEEE, MMMM d, yyyy H:mm	")}</DateStyled>
+  );
 }

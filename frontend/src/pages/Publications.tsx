@@ -1,14 +1,17 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { PlusOutlined } from "@ant-design/icons";
-import { Button } from "antd";
+import { Button, Modal } from "antd";
 import { useDispatch } from "react-redux";
+import { useQueryParam, NumberParam } from "use-query-params";
 
-import { ListOfPublications, PublicationsHead, Title } from "../components";
-import styled from "../utils/styled";
+import { Title, Pagination, ConfigList, PublicationsList } from "../components";
 import { api } from "../api";
 import { Dispatch } from "../store";
 import { setPublications } from "../store/modules/publications";
 import { Publication } from "../interfaces";
+
+import styled from "../utils/styled";
+import { PublicationModal } from "../components/Publications/PublicationModal";
 
 const HeadList = styled.header`
   display: flex;
@@ -16,8 +19,8 @@ const HeadList = styled.header`
   justify-content: space-between;
 `;
 
-const getPublications = async (options: {
-  page?: number;
+const fetchPublications = async (options: {
+  page?: number | null;
   sort?: string;
   order?: "asc" | "desc";
   query?: string;
@@ -25,11 +28,11 @@ const getPublications = async (options: {
   let response = await api.get(`/publications`, {
     params: {
       _expand: "author",
-      _limit: 2,
+      _limit: 5,
       _page: options.page ?? 1,
       _sort: options.sort ?? "createdAt",
       _order: options.order ?? "desc",
-      q: options.query,
+      title_like: options.query,
     },
   });
 
@@ -39,26 +42,50 @@ const getPublications = async (options: {
 export function Publications() {
   const dispatch = useDispatch<Dispatch>();
 
+  const [isLoading, setLoading] = useState<boolean>(true);
+  const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
+
+  const [page] = useQueryParam("page", NumberParam);
+  const [order] = useQueryParam<"asc" | "desc">("order");
+  const [query] = useQueryParam<string | undefined>("query");
+
   useEffect(() => {
-    getPublications({}).then((response) => {
-      dispatch(setPublications(response));
-      console.log(response);
-    });
-  }, []);
+    const getPublications = async () => {
+      // setLoading(true);
+      const data = await fetchPublications({ page, order, query });
+      dispatch(setPublications(data));
+      setLoading(false);
+    };
+    getPublications();
+  }, [dispatch, page, order, query]);
 
   return (
     <>
+      <Modal
+        title="Add publication"
+        visible={isModalOpen}
+        onCancel={() => setIsModalOpen(false)}
+        footer={null}
+      >
+        <PublicationModal setIsModalOpen={setIsModalOpen} />
+      </Modal>
       <HeadList>
         <Title size="large" padded>
           Publications
         </Title>
-        <Button type="primary" shape="round">
+        <Button
+          type="primary"
+          shape="round"
+          onClick={() => setIsModalOpen(true)}
+        >
           <PlusOutlined />
-          Create Publication
+          New Publication
         </Button>
       </HeadList>
-      <PublicationsHead />
-      <ListOfPublications />
+
+      <ConfigList />
+      <Pagination />
+      <PublicationsList isLoading={isLoading} />
     </>
   );
 }

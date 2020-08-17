@@ -1,20 +1,21 @@
 import React from "react";
-
-import { PubllicationItemStyled } from "./styles";
-import { Publication } from "../../interfaces";
-import { Title, Paragraph, DateFormatted } from "../common";
 import { Link } from "react-router-dom";
-import { AuthorItem } from "../AuthorItem";
+
+import { Title, Paragraph, DateFormatted } from "../common";
+import { PublicationItemStyled } from "./styles";
+import { Publication } from "../../interfaces";
 
 interface Props {
   publication: Publication;
 }
 
-export function PubllicationItem({ publication }: Props) {
+export function PublicationItem({ publication }: Props) {
   return (
     <Link to={`/publication/${publication.id}`}>
-      <PubllicationItemStyled>
-        <Title size="normal">{publication.title}</Title>
+      <PublicationItemStyled>
+        <Title size="normal" colored>
+          {publication.title}
+        </Title>
         <div>
           <DateFormatted date={publication.createdAt} />
         </div>
@@ -23,7 +24,7 @@ export function PubllicationItem({ publication }: Props) {
             {publication.author.firstName}, {publication.author.email}
           </Paragraph>
         )}
-      </PubllicationItemStyled>
+      </PublicationItemStyled>
     </Link>
   );
 }
