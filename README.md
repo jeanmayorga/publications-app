@@ -38,7 +38,6 @@ $ yarn install
 3. [React-Redux](https://www.npmjs.com/package/redux): React Redux is maintained by the Redux team, and kept up-to-date with the latest APIs from Redux and React. Predictable.
 4. [emotion-theming](https://www.npmjs.com/package/emotion-theming): Emotion-theming is a theming library inspired by **Styled-components**
 5. [Ant Design](https://ant.design/): A design system similar to Material UI for enterprise-level products. Create an efficient and enjoyable work experience.
-6. [AWS Amplify](https://aws.amazon.com/es/amplify/): AWS Amplify is a set of tools and services that enables mobile and front-end web developers to build secure, scalable full stack applications, powered by AWS.
 
 ## Available Scripts
 
@@ -84,7 +83,7 @@ Inside `src` folder we have:
 - **store:** Redux actions and reducers
 - **utils:** Utils
 
-## Frontend
+## Backend
 
 ## Main technologies used
 
