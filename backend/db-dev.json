@@ -49,7 +49,77 @@
       "authorId": 2,
       "title": "OpenAI’s new language generator GPT-3 is shockingly good",
       "body": "The AI is the largest language model ever created and can generate amazing human-like text on demand but won't bring us closer to true intelligence.",
+      "createdAt": "2020-08-16T06:10:33.518Z"
+    },
+    {
+      "id": 3,
+      "authorId": 2,
+      "title": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, nisi sit eum, accusantium nulla aperiam tenetur officia ab sapiente neque quam aut similique, commodi iusto dolorem vitae culpa molestias sunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, nisi sit eum, accusantium nulla aperiam tenetur officia ab sapiente neque quam aut similique, commodi iusto dolorem vitae culpa molestias sunt.",
       "createdAt": "2020-08-14T06:10:33.518Z"
+    },
+    {
+      "authorId": 1,
+      "title": "My Latest Publication",
+      "body": "Proin porttitor ex eu semper posuere. Integer ut est turpis. Mauris tincidunt nisl nisi, eu tempus lorem hendrerit sed. Donec enim mauris, malesuada in tempor quis, fermentum quis leo. Aliquam interdum urna in metus ultricies, at faucibus mauris bibendum. Etiam tincidunt elementum mattis. Mauris posuere sollicitudin efficitur. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean in blandit quam. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse massa justo, imperdiet eu volutpat in, convallis ut lectus. Praesent euismod mi sit amet erat rutrum luctus. Aliquam varius lobortis ante, porta feugiat nibh posuere quis.\n\nMaecenas porttitor ultricies nulla eu viverra. Ut id consectetur elit, in sollicitudin sem. Nam sed elit nisl. Donec vel neque sit amet metus tempor hendrerit. Nam a elementum tellus, sit amet hendrerit quam. Maecenas a gravida eros. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam in arcu nunc. Duis condimentum vestibulum dui a euismod.\n\nNullam id dapibus dui. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse luctus nec urna et fermentum. Mauris iaculis urna at dapibus bibendum. Sed tempus diam eu lobortis hendrerit. Quisque mollis euismod arcu fermentum eleifend. Nam nisi ante, rutrum pretium nunc ut, consectetur dignissim dolor. Quisque orci lacus, volutpat vitae tellus ac, consequat facilisis eros. Quisque fermentum felis at augue scelerisque elementum.",
+      "createdAt": "2020-08-16T08:53:21.878Z",
+      "id": 5
+    },
+    {
+      "authorId": 1,
+      "title": "Other publication",
+      "body": "My another body",
+      "createdAt": "2020-08-16T08:54:48.672Z",
+      "id": 7
+    },
+    {
+      "authorId": 1,
+      "title": "Latest Publication",
+      "body": "My latest publication",
+      "createdAt": "2020-08-16T08:56:55.368Z",
+      "id": 8
+    },
+    {
+      "authorId": 2,
+      "title": "Small publication, major influence",
+      "body": "Building appreciation for the St. Croix River is one of my life goals. The river is not only a wonderful place to play, but also a fascinating ecosystem and a remarkably healthy large river.\n\nRecognizing the river’s special qualities lets us know how to protect what we love.\n\nThat’s why I’m happy whenever St. Croix 360 influences other media. Whether we inspire other coverage or our stories are reprinted, it’s a valuable way to inspire stewardship.",
+      "createdAt": "2020-08-16T09:21:14.376Z",
+      "id": 9
+    },
+    {
+      "authorId": 3,
+      "title": "Title",
+      "body": "My own body",
+      "createdAt": "2020-08-16T20:03:32.925Z",
+      "id": 10
+    },
+    {
+      "authorId": 3,
+      "title": "Other publication",
+      "body": "dsfsfsdf",
+      "createdAt": "2020-08-16T23:11:49.216Z",
+      "id": 11
+    },
+    {
+      "authorId": 2,
+      "title": "My latest pub",
+      "body": "My latest body",
+      "createdAt": "2020-08-17T16:13:29.667Z",
+      "id": 12
+    },
+    {
+      "authorId": 3,
+      "title": "One publication",
+      "body": "sdfsdfsdf",
+      "createdAt": "2020-08-17T16:15:44.248Z",
+      "id": 13
+    },
+    {
+      "authorId": 1,
+      "title": "Other publication",
+      "body": "eeee",
+      "createdAt": "2020-08-17T16:17:30.541Z",
+      "id": 14
     }
   ]
 }

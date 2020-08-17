@@ -1,18 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import { Button } from "antd";
-import { PageTitle } from "../components";
 
 export function Home() {
   return (
     <div>
-      <PageTitle
-        onBack={() => null}
-        title="Title"
-        subTitle="This is a subtitle"
-      />
-      <h1>Hola este es el home</h1>
-      <Button>Holis</Button>
+      <h1>Hi, Welcome to Publications App.</h1>
+      <div>
+        <Link to="/publications">View Publications</Link>
+      </div>
     </div>
   );
 }
