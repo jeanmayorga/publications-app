@@ -16,6 +16,7 @@
     "@types/react-router-dom": "^5.1.5",
     "antd": "^4.5.4",
     "axios": "^0.19.2",
+    "cross-env": "^7.0.2",
     "date-fns": "^2.15.0",
     "emotion-theming": "^10.0.27",
     "query-string": "^6.13.1",
@@ -25,14 +26,13 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "redux": "^4.0.5",
-    "styled-components": "^5.1.1",
     "typescript": "~3.7.2",
     "use-debouncy": "^2.1.7",
     "use-query-params": "^1.1.6"
   },
   "scripts": {
-    "start:dev": "PORT=8080 react-scripts start",
-    "start:prod": "PORT=8080 react-scripts start",
+    "start:dev": "cross-env REACT_APP_ENV=development PORT=8080 react-scripts start",
+    "start:prod": "cross-env REACT_APP_ENV=production PORT=8080 react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

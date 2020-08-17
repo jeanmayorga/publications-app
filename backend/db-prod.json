@@ -99,6 +99,27 @@
       "body": "dsfsfsdf",
       "createdAt": "2020-08-16T23:11:49.216Z",
       "id": 11
+    },
+    {
+      "authorId": 2,
+      "title": "My latest pub",
+      "body": "My latest body",
+      "createdAt": "2020-08-17T16:13:29.667Z",
+      "id": 12
+    },
+    {
+      "authorId": 3,
+      "title": "One publication",
+      "body": "sdfsdfsdf",
+      "createdAt": "2020-08-17T16:15:44.248Z",
+      "id": 13
+    },
+    {
+      "authorId": 1,
+      "title": "Other publication",
+      "body": "eeee",
+      "createdAt": "2020-08-17T16:17:30.541Z",
+      "id": 14
     }
   ]
 }

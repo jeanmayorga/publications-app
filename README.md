@@ -1,23 +1,67 @@
 # Publications App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is an applcation for _Frontend Position_
+
+## Directory layout
+
+```
+.
+├── frontend/                   <-- Frontend Site
+├── backend/                    <-- Backend Site
+```
+
+## Getting started
+
+### Requirements
+
+Make sure the following tools are installed in your system:
+
+- [Node v12.X.X](https://nodejs.org/en/download/)
+- [Yarn v1.21.X](https://yarnpkg.com/en/docs/install)
+
+### Installation
+
+Clone the GitHub repository and use `yarn` to install the dependencies.
+
+```
+$ git clone https://github.com/<username>/publications-app.git
+$ cd publications-app
+$ yarn install
+```
+
+## Frontend
+
+## Main technologies used
+
+1. [React js](https://reactjs.org/): A JavaScript library for building user interfaces
+2. [Redux](https://www.npmjs.com/package/redux): A predictable state container for JavaScript apps.
+3. [React-Redux](https://www.npmjs.com/package/redux): React Redux is maintained by the Redux team, and kept up-to-date with the latest APIs from Redux and React. Predictable.
+4. [emotion-theming](https://www.npmjs.com/package/emotion-theming): Emotion-theming is a theming library inspired by _Styled-components_
+5. [Ant Design](https://ant.design/): A design system for enterprise-level products. Create an efficient and enjoyable work experience.
+6. [AWS Amplify](https://aws.amazon.com/es/amplify/): AWS Amplify is a set of tools and services that enables mobile and front-end web developers to build secure, scalable full stack applications, powered by AWS.
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `yarn start`
+### Local
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+To start developing environment simply run:
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+```
+$ yarn start:dev
+
+```
+
+To start production environment simply run:
+
+```
+$ yarn start:prod
+```
 
 ### `yarn test`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.
 
 ### `yarn build`
 
@@ -29,18 +73,34 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
+Inside `src` folder we have:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **api:** Cloudinary function to be called
+- **components:** Reusable UI components used in the main pages
+- **config:** Some public configurations
+- **interfaces:** Some interfaces for app
+- **pages:** Main pages the users see on the web application
+- **routes:** Apps routes
+- **store:** Redux actions and reducers
+- **utils:** Utils
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Frontend
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Main technologies used
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. [JSON SERVER](https://github.com/typicode/json-server): fake REST API with zero coding in less than 30 seconds (seriously)
 
-## Learn More
+### Local
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To start developing environment simply run:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+$ yarn start:dev
+
+```
+
+To start production environment simply run:
+
+```
+$ yarn start:prod
+```

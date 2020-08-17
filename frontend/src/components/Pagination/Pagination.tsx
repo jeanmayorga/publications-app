@@ -19,12 +19,14 @@ export function Pagination() {
 
   const [page, setPage] = useQueryParam("page", NumberParam);
 
+  const pageNumber = page ?? 1;
+
   return (
     <PaginationStyled>
       <Button
         icon={<ArrowLeftOutlined />}
         shape="round"
-        onClick={() => setPage((page ?? 1) - 1)}
+        onClick={() => setPage(pageNumber - 1)}
         disabled={!page || page === 1}
       >
         Prev
@@ -32,8 +34,8 @@ export function Pagination() {
       <Button
         icon={<ArrowRightOutlined />}
         shape="round"
-        onClick={() => setPage((page ?? 1) + 1)}
-        disabled={publications.length !== 5}
+        onClick={() => setPage(pageNumber + 1)}
+        disabled={publications.length < 5}
       >
         Next
       </Button>
