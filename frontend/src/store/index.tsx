@@ -2,9 +2,11 @@ import { createStore, combineReducers, compose } from "redux";
 
 import { publicationsReducer } from "./modules/publications";
 import { authorsReducer } from "./modules/authors";
+import { filteredAuthorsReducer } from "./modules/filteredAuthors";
 
 const rootReducer = combineReducers({
   publications: publicationsReducer,
+  filteredAuthors: filteredAuthorsReducer,
   authors: authorsReducer,
 });
 

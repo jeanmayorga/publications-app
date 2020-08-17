@@ -51,7 +51,7 @@ export function Publications() {
 
   useEffect(() => {
     const getPublications = async () => {
-      // setLoading(true);
+      setLoading(true);
       const data = await fetchPublications({ page, order, query });
       dispatch(setPublications(data));
       setLoading(false);

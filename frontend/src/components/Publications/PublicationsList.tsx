@@ -5,6 +5,7 @@ import { Empty } from "antd";
 import { RootState } from "../../store";
 import { PublicationsListStyled } from "./styles";
 import { PublicationItem, PublicationItemSkeleton } from ".";
+import { Link } from "react-router-dom";
 
 interface Props {
   isLoading: boolean;
@@ -32,7 +33,9 @@ export function PublicationsList({ isLoading }: Props) {
         <Empty
           image={Empty.PRESENTED_IMAGE_SIMPLE}
           description="No publications"
-        />
+        >
+          <Link to="/publications">Go to publications and create one</Link>
+        </Empty>
       )}
     </PublicationsListStyled>
   );
