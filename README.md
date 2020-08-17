@@ -1,13 +1,13 @@
 # Publications App
 
-This is an applcation for _Frontend Position_
+This is an applcation for **Frontend Position**
 
 ## Directory layout
 
 ```
 .
-├── frontend/                   <-- Frontend Site
-├── backend/                    <-- Backend Site
+├── frontend/                   <-- Frontend folder
+├── backend/                    <-- Backend folder
 ```
 
 ## Getting started
@@ -36,8 +36,8 @@ $ yarn install
 1. [React js](https://reactjs.org/): A JavaScript library for building user interfaces
 2. [Redux](https://www.npmjs.com/package/redux): A predictable state container for JavaScript apps.
 3. [React-Redux](https://www.npmjs.com/package/redux): React Redux is maintained by the Redux team, and kept up-to-date with the latest APIs from Redux and React. Predictable.
-4. [emotion-theming](https://www.npmjs.com/package/emotion-theming): Emotion-theming is a theming library inspired by _Styled-components_
-5. [Ant Design](https://ant.design/): A design system for enterprise-level products. Create an efficient and enjoyable work experience.
+4. [emotion-theming](https://www.npmjs.com/package/emotion-theming): Emotion-theming is a theming library inspired by **Styled-components**
+5. [Ant Design](https://ant.design/): A design system similar to Material UI for enterprise-level products. Create an efficient and enjoyable work experience.
 6. [AWS Amplify](https://aws.amazon.com/es/amplify/): AWS Amplify is a set of tools and services that enables mobile and front-end web developers to build secure, scalable full stack applications, powered by AWS.
 
 ## Available Scripts
