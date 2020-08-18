@@ -74,7 +74,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 Inside `src` folder we have:
 
-- **api:** Cloudinary function to be called
+- **api:** Api Connection
 - **components:** Reusable UI components used in the main pages
 - **config:** Some public configurations
 - **interfaces:** Some interfaces for app
